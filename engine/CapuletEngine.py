@@ -1,4 +1,4 @@
-from Engine import Engine
+from .Engine import Engine
 
 class CapuletEngine(Engine):
     def __init__(self, last_service_mileage: int, current_milage: int):
@@ -6,4 +6,4 @@ class CapuletEngine(Engine):
         self.current_milage = current_milage
     
     def needs_service(self) -> bool:
-        return (self.current_milage - self.last_service_mileage) >= 10000
+        return (self.current_milage - self.last_service_mileage) >= 30000
